@@ -25,6 +25,18 @@ a{
     justify-content: center;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p{
+    text-align: left;
+    font-size: 1.5rem;
+    line-height:  1.9rem;
+
+}
 /* Hero Section */
 #hero{
     background-image: url(./imgs/background\ image.png);
@@ -141,6 +153,71 @@ a{
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
+}
+
+#applications .applications-top p {
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 5px;
+    line-height: 3rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+#applications .applications-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#applications .applications.item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./imgs/cardimg.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+
+}
+#applications .applications.item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(183, 78, 113);
+    opacity: .2;
+    z-index: -1;
+
+}
+#applications .applications-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+
+}
+
+#applications .applications.item h2 {
+    font-size: 2rem;
+    color: palevioletred;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
+#applications .applications.item p {
+    text-align: left;
+    font-size: 1.5rem;
+    line-height:  1.9rem;
+
 }
 
 
