@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <!-- Header Section -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1>Mikayla Martin</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a href="#applications" data-after="Applications">Applications</a></li>
+                        <li><a href="#about" data-after="About Me">About Me</a></li>
+                        <li><a href="#contact" data-after="Contact Me">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Header Section -->
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero container">
@@ -14,7 +41,7 @@
                 <h1>Hello,<span></span></h1>
                 <h1>My Name Is<span></span></h1>
                 <h1>Mikayla<span></span></h1>
-                <a href="#" type="button" class="cta">Portfolio</a>
+                <a href="https://google.com" type="button" class="cta">Portfolio</a>
             </div>
 
         </div>
@@ -29,27 +56,35 @@
                 <p>This is where my applications will be!</p>
             </div>
             <div class="applications-bottom">
-                <div class="applications item">
+                <div id="item" class="applications item">
                     <div class="icon"><img src="imgs/icons8-heart-64.png"></div>
                     <h2>Application 1</h2>
                     <p>This is where I will add my applications once I have made them!</p>
+                    <a href="https://google.com" type="button" class="cta">App</a>
                 </div>
-            </div>
-            <div class="applications-bottom">
-            <div class="applications item">
-                <div class="icon"><img src="imgs/icons8-heart-64.png"></div>
-                <h2>Application 2</h2>
-                <p>This is where I will add my applications once I have made them!</p>
-            </div>
+            <!-- </div>
+            <div class="applications-bottom"> -->
+                <div class="applications item">
+                    <div class="icon"><img src="imgs/icons8-heart-64.png"></div>
+                    <h2>Application 2</h2>
+                    <p>This is where I will add my applications once I have made them!</p>
+                    <a href="https://google.com" type="button" class="cta">App</a>
+                </div>
+                <div class="applications item">
+                    <div class="icon"><img src="imgs/icons8-heart-64.png"></div>
+                    <h2>Application 3</h2>
+                    <p>This is where I will add my applications once I have made them!</p>
+                    <a href="https://google.com" type="button" class="cta">App</a>
+                </div>
             </div>
         </div>
 
-        
+
 
         </div>
     </section>
     <!-- End of APPLICATIONS section -->
-    
+
     <!-- Start of ABOUTME section -->
     <section id="about">
         <div class="about container">
@@ -61,8 +96,10 @@
             <div class="col-right">
                 <h1 class="section-title">About Me</h1>
                 <h2>Future Developer</h2>
-                <p>Currently I am a full time stay at home mom with a passion for learning new skills! I have always been interested in computers and gaming, so for now I am taking this bootcamp course to gain new skills, learn new things, and broaden my horizons!</p>
-                <a href="#" class="cta">Download Resume</a>
+                <p>Currently I am a full time stay at home mom with a passion for learning new skills! I have always
+                    been interested in computers and gaming, so for now I am taking this bootcamp course to gain new
+                    skills, learn new things, and broaden my horizons!</p>
+                <a href="https://google.com" class="cta">Download Resume</a>
             </div>
         </div>
     </section>
@@ -71,35 +108,37 @@
     <!-- End of ABOUT ME section -->
 
     <!-- Start of Contact Section -->
-   <section id="contact">
-    <div class="contact container">
-        <div><h1 class="section-title">Contact Me</h1></div>
-        <div class="contact-items">
-            <div class="contact-item">
-                <div class="icon"><img src="./imgs/icons8-phone-50.png"></div>
-                <div class="contact-info">
-                    <h1>Phone</h1>
-                    <h2>(513)-835-****</h2>
-                </div>
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">Contact Me</h1>
             </div>
-            <div class="contact-item">
-                <div class="icon"><img src="./imgs/icons8-email-50.png"></div>
-                <div class="contact-info">
-                    <h1>Email</h1>
-                    <h2>mikayla@info.com*</h2>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="./imgs/icons8-phone-50.png"></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>(513)-835-****</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-item">
-                <div class="icon"><img src="./imgs/icons8-location-50.png"></div>
-                <div class="contact-info">
-                    <h1>Location</h1>
-                    <h2>Cincinnati, OH</h2>
+                <div class="contact-item">
+                    <div class="icon"><img src="./imgs/icons8-email-50.png"></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>mikayla@info.com*</h2>
+                    </div>
                 </div>
-            </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="./imgs/icons8-location-50.png"></div>
+                    <div class="contact-info">
+                        <h1>Location</h1>
+                        <h2>Cincinnati, OH</h2>
+                    </div>
+                </div>
 
+            </div>
         </div>
-    </div>
-   </section>
+    </section>
 
 
     <!-- End of Contact Section -->
@@ -107,7 +146,9 @@
     <!-- Start of FOOTER -->
     <section id="footer">
         <div class="footer container">
-            <div class="brand"><h1>Mikayla Martin</h1></div>
+            <div class="brand">
+                <h1>Mikayla Martin</h1>
+            </div>
             <h2>Made With Love by Me</h2>
             <div class="social-icon">
                 <div class="social-item">
@@ -122,4 +163,5 @@
     </section>
     <!-- End Of Footer -->
 </body>
+
 </html>
