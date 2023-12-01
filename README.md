@@ -13,3 +13,5 @@
 <li>THEN I am taken to that deployed application</li>
 <li>WHEN I resize the page or view the site on various screens and devices</li>
 <li>THEN I am presented with a responsive layout that adapts to my viewport</li>
+
+Web Link: https://mikaylaakelly.github.io/portfolio-module-2/ Github link: https://github.com/mikaylaakelly/portfolio-module-2  Source code: https://github.com/ShaifArfan/one-page-website-html-css-project
