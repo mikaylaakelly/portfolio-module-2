@@ -90,10 +90,17 @@ p{
 
 }
 
+.nav-bar .li {
+    color: whitesmoke;
+    
+}
+
+
 #header .nav-list ul {
     list-style: none;
     position: absolute;
     background-color: palevioletred;
+    font-size: 12px;
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -118,7 +125,7 @@ p{
 
 }
 
-#header .nav-list ul a::after {
+ #header .nav-list ul a::after {
     content: attr(data-after);
     position: absolute;
     top: 50%;
@@ -593,7 +600,7 @@ p{
         text-align: left;
         padding-left: 15px;
 
-    }
+    }}
 
 
     /* End Contact */
@@ -603,7 +610,7 @@ p{
 
 
 
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 200px) {
 	    /* header */
 
 	#header .hamburger {
@@ -632,10 +639,34 @@ p{
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */
+@media only screen and (max-width: 767px) {
+    #header .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    #header .nav-list ul {
+        position: static;
+        width: 100%;
+        background-color: rgb(183, 78, 113);
+        display: none; /* Hide the navigation links initially */
+    }
 
-}
- 
+    #header .nav-list ul.active {
+        display: flex; /* Show the navigation links when the menu is active */
+        flex-direction: column;
+    }
 
+    #header .nav-list ul a {
+        font-size: 2rem;
+        padding: 15px;
+        text-align: center;
+    }
 
+    #header .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        color: white;
+    }}
+    /* End  Media Query For Desktop */
